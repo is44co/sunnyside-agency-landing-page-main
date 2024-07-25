@@ -377,6 +377,100 @@ cursor: pointer;
 
 /* media */
 @media(max-width:600px){
+
+    .egg{
+        display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr) ) ;
+    }
+    .leftegg{
+       grid-row: 2/3;
+       
+    padding-top: 1rem;
+    
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    
+    
+    height: 100%;
+    }
+    .leftegg h3{
+    
+        font-size: 3rem;
+        width: 50%;
+        text-align: left;
+        padding-bottom: 1px;
+        margin-bottom: 1px;
+    }
+    .leftegg p{
+    color: var(--paragraph);
+    width: 50%;
+    text-align: left;
+    line-height: 1.7;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    }
+    .rightegg{
+    grid-row: 1/2;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    
+    }
+
+
+    * start of card */
+section.cards{
+ 
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) ) ;
+    align-items: center;
+ 
+}
+.cardleft{
+    
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
+
+.card{
+    margin-top: -4px;
+    padding-right: -10px;
+    padding: 20rem 2rem;
+    padding-bottom: 10rem;
+min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: end; */
+    text-align: center;
+
+}
+.card p{
+color: var(--paragraph);
+    line-height: 1.5;
+    width: 50%;
+}
+.card h3{
+    color: var(--darkDblue);
+    font-size:2rem ;
+    padding-bottom: 1rem;
+    padding-top: 10rem;
+}
+.cardright{
+
+    background-image:url(../images/desktop/image-photography.jpg) ;
+    background-position:center center;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* end of card */
 nav{
     padding-right:2rem;
     display: flex;
@@ -401,7 +495,6 @@ nav{
 }
 @media (max-width:1440px){
     body{
-        background-color: aqua;
     }
 /* start of egg */
 img{
